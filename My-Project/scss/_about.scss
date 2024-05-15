@@ -1,0 +1,41 @@
+
+// About
+.about-main {
+    .about-bee-heading {
+      @include heading();
+    }
+  
+    @include details("display-about-inner", url("../images/Pregnant-Lady.jpg"));
+    .Our-Services {
+      background-color: $Primary-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1,
+      p {
+        text-align: center;
+        max-width: 100ch;
+        line-height: 2rem;
+      }
+      .our-services-details {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        ul {
+          background-color: lighten($Secondary-color, 10);
+          padding: 2rem;
+          li {
+            padding: 1rem 0;
+            line-height: 1.7rem;
+          }
+        }
+      }
+    }
+    .for_Intending-parents {
+      background-color: lighten($Secondary-color, 10);
+      padding: 0 1rem 1rem;
+      p {
+        line-height: 2rem;
+      }
+    }
+  }

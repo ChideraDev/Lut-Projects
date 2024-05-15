@@ -1,0 +1,41 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    .nav-img {
+      max-width: 100px;
+    }
+    .nav-ul-big {
+      list-style: none;
+      display: flex;
+      z-index: 4;
+      padding: 1rem 0;
+      margin: 0;
+      background-color: $Primary-color;
+      li {
+        margin: 0 10px;
+        a {
+          color: $Secondary-color;
+        }
+        &:hover {
+          border-bottom: 2px solid $Secondary-color;
+          @include easeOut;
+        }
+      }
+    }
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      .bar {
+        width: 30px;
+        height: 3px;
+        background-color: $black-color;
+        margin: 3px 0;
+        transition: transform 0.4s;
+      }
+    }
+  }

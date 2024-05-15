@@ -1,0 +1,88 @@
+@import "config";
+@import "nav";
+@import "about";
+@import "privacy";
+@import "home";
+body {
+  font-family: "Karla", sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+  a {
+    text-decoration: none;
+    i {
+      font-size: 1rem;
+    }
+  }
+}
+//Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  &.lg-heading{
+    font-weight: 800;
+  }
+  &.lg-text{
+    line-height: 2rem;
+    padding: 0.5rem 0;
+  }
+}
+
+.app {
+  width: 95vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+// Footer
+
+footer {
+  color: $Secondary-color;
+  background-color: $Primary-color;
+  div{
+width: 50%;
+gap: 0.2rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 auto;
+padding: 0.5rem 0;
+p{
+  padding: 0 !important;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    text-align: center;
+    display: inline;
+    a {
+      color: inherit;
+      padding: 0.5rem;
+      :hover {
+        color: $black-color;
+      }
+    }
+  }
+}
+}
+}
+
+//Whatsapp Logo
+.whatsapp {
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 3%;
+  z-index: 10;
+  a {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@import "mobile"

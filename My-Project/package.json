@@ -1,0 +1,20 @@
+{
+  "name": "bee-surrogacy-site",
+  "version": "1.0.0",
+  "description": "Bee Surrogacy",
+  "main": "index.js",
+  "homepage": "https://chideradev.github.io/Bee-Surrogact-site/",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Dera",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "node": "^18.20.2"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

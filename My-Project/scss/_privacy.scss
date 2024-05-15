@@ -1,0 +1,12 @@
+
+
+// Privacy
+
+.privacy-main {
+    line-height: 1.5rem;
+    .bee-privacy-heading {
+      @include heading();
+    }
+  
+    @include details("bee-privacy-inner", url("../images/Privacy.jpg"));
+  }

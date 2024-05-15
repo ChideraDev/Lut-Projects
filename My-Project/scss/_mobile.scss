@@ -1,0 +1,112 @@
+@include mediaMd{
+    main {
+      .display-image-inner {
+        .header-inner {
+          width: 97%;
+        }
+      }
+    }
+    .about-us {
+      .main-inner {
+        .bee-qualities {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-areas: "about1 about2" "about3 about4";
+        }
+      }
+    }
+    .story {
+      .our-story {
+        grid-template-columns: 1fr;
+        grid-template-areas: "intending" "intendingPic" "surrogates" "surrogatesPic";
+      }
+    }
+    .about-main {
+      .display-about-inner {
+        .about-header-details {
+          grid-template-columns: 1fr;
+        }
+      }
+      .Our-Services {
+        .our-services-details {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+    .privacy-main {
+      .bee-privacy-inner {
+        .bee-privacy-details {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+    footer{
+      div{
+        width: 100%;
+      }
+    }
+  }
+  @include mediaSm{
+    main {
+      .display-image-inner {
+        min-height: 30vh;
+        .header-inner {
+          flex-direction: column;
+          .intro-text-divs {
+            width: 80%;
+          }
+        }
+      }
+    }
+    .about-us {
+      .main-inner {
+        .bee-qualities {
+          width: 95%;
+          grid-template-columns: 1fr;
+          grid-template-areas: "about1" "about2" "about3" "about4";
+        }
+      }
+    }
+  }
+  
+  @include mediaSs {
+    nav {
+      .nav-ul-big {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        justify-content: space-between;
+        &.active {
+          display: flex;
+          position: absolute;
+         
+          height: 30vh;
+          width: 70%;
+          padding: 2rem 0;
+          right: 2px;
+          top: 80px;
+          @include comeFromRight;
+          transform: perspective(370px) scaleZ(5) rotate(17deg);
+          @include easeOut;
+          animation: comeFromRight 1s forwards;
+        }
+      }
+      .menu-icon {
+        display: flex;
+  
+        &.active {
+          .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+          }
+  
+          .bar:nth-child(2) {
+            opacity: 0;
+          }
+  
+          .bar:nth-child(3) {
+            transform: translateY(-10px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
