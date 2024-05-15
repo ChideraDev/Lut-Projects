@@ -1,0 +1,132 @@
+
+.display-image-inner {
+    padding-top: 2rem;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    background-image: url("../images/baby-laying.jpg");
+    min-height: 70vh;
+    object-fit: cover;
+    div {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 80%;
+  
+      h1 {
+        font-size: 6rem;
+        text-shadow: 2px 2px 4px $Primary-color;
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  .about-us {
+    background-color: $Primary-color;
+    padding: 2rem 0;
+    text-align: center;
+    .main-inner {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+  
+      .bee-qualities {
+        display: grid;
+        padding-top: 2rem;
+        gap: 1rem;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-areas: "about1 about2 about3 about4";
+        h1 {
+          grid-area: h1;
+        }
+        &:first-child {
+          grid-area: about1;
+        }
+        &:nth-child(2) {
+          grid-area: about2;
+        }
+        &:nth-child(3) {
+          grid-area: about3;
+        }
+        &:nth-child(4) {
+          grid-area: about4;
+        }
+  
+        div {
+          background: $Secondary-color;
+          display: flex;
+          padding: 1rem;
+          border-radius: 10px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          img {
+            max-width: 50px;
+          }
+          h3 {
+            padding-top: 1rem;
+          }
+          p {
+            max-width: 30ch;
+            padding: 1rem 0;
+          }
+          a {
+            color: $Primary-color;
+          }
+        }
+      }
+    }
+  }
+  .story {
+    .our-story {
+      display: grid;
+      padding: 1.5rem 0;
+      background-color: $Secondary-color;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-areas: "intendingPic intending" " surrogates  surrogatesPic";
+      gap: 1rem;
+      
+      div:first-child {
+        justify-self: center;
+        align-self: center;
+        background-color: $Primary-color;
+        padding: 1.5rem;
+        box-shadow: 5px 10px #000;
+        grid-area: intending;
+        @include btn;
+      }
+      div:nth-child(2) {
+        display: flex;
+        grid-area: intendingPic;
+      }
+      div:nth-child(3) {
+        justify-self: center;
+        align-self: center;
+        padding: 1.5rem;
+        grid-area: surrogates;
+        box-shadow: 5px 10px #000;
+        background-color: $Primary-color;
+        @include btn;
+      }
+      div:nth-child(4) {
+        display: flex;
+        grid-area: surrogatesPic;
+      }
+      div {
+        img {
+          max-width: 100%;
+          height: auto; /* Ensure the image doesn't overflow its container */
+          object-fit: cover;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
