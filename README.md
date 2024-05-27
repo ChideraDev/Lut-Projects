@@ -2,7 +2,7 @@
 
 This repository contains two distinct projects, each showcasing different aspects of web development skills. Below is a detailed description of both projects along with their respective features.
 
-## Project 1: [Portfolio Website](./Course-Work/)
+## Project 1: [Portfolio Website("Course-Work")](./Course-Work/)
 
 This project is a coursework assignment designed as a portfolio website. It serves as a personal showcase of skills, projects, and contact information.
 
@@ -29,7 +29,7 @@ This project is a coursework assignment designed as a portfolio website. It serv
 - **HTML**: Structure of the web pages.
 - **SCSS**: Styling, using Sassy CSS for advanced features and better maintainability.
 - **JavaScript**: Interactive elements and form validation.
-[Portfolio Website](./Course-Work/)
+[Portfolio Website("Course-Work")](./Course-Work/)
  
 
 
