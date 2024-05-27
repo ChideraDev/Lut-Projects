@@ -62,7 +62,7 @@ This project is a website built for a surrogacy service. It aims to provide esse
 - **HTML**: Structure of the web pages.
 - **SCSS**: Styling, using Sassy CSS for advanced features and better maintainability.
 - **JavaScript**: Interactive elements and handling of communication links.
-[Surrogacy Website)](./My-Project//)
+[Surrogacy Website](./My-Project//)
 ---
 
 Both projects demonstrate a solid understanding of web development principles, including responsive design, user experience, and effective use of SCSS for styling. The portfolio website highlights a range of personal projects and skills, while the surrogacy website focuses on providing crucial information and easy communication channels for potential clients.
